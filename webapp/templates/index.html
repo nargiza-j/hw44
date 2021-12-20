@@ -8,6 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <h1>Bulls and Cows</h1>
+    <h2>Guess 4 numbers.</h2>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <input type="number" name="numbers"/></br>
+            <br><input type="submit" value="Send"/></br>
+        </form>
+    <br>
+    <div>{{ message }}</div>
+{#    <a href="history/">view history</a>#}
 </body>
 </html>
